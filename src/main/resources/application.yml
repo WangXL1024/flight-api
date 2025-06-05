@@ -17,3 +17,5 @@ logging:
   file:
     name: flightapi.log
     path: logs
+jwt:
+  jwtSecret: XaQ8p5dT+z2Jz7cF3wJv5r6e4t7y3u8i9o0p2a3s4d5f6g7h8j9k0l1z2x3c4v5b6n7m8q9w0e

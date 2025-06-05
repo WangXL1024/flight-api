@@ -6,23 +6,23 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-
 import com.example.flightapi.dto.LoginUserDetails;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+
+
 
 @Component
 public class JwtUtils {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
-    @Value("YourSecretKeyHere")
+    @Value("${jwt.jwtSecret}")
     private String jwtSecret;
 
-    @Value("86400000")
+    @Value("3600000")
     private int jwtExpirationMs;
 
     public String extractUsername(String token) {
