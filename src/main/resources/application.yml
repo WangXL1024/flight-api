@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: flight-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/flight_db
+    username: root
+    password: 811024
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  file:
+    name: flightapi.log
+    path: logs
+jwt:
+  jwtSecret: XaQ8p5dT+z2Jz7cF3wJv5r6e4t7y3u8i9o0p2a3s4d5f6g7h8j9k0l1z2x3c4v5b6n7m8q9w0e
